@@ -170,7 +170,6 @@ export default {
     },
 
     post(type) {
-      console.log('123123123');
       let url = `/api/test${type}`;
       axios.get(url).then(ret => {
         this.$message({
@@ -184,6 +183,7 @@ export default {
 
   mounted: function() {
     let _this = this;
+
     window.onload = function() {
       _this.netStage = _this.getSourceTiming();
       _this.staticSource = _this.getStaticTiming();
