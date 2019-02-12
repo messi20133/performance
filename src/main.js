@@ -12,6 +12,7 @@ Vue.config.productionTip = false
 window.sss = {
   XXX: 2
 }
+var t1 = 'first';
 new Vue({
   el: '#app',
   router,
